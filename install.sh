@@ -29,16 +29,16 @@ echo "Are you going to work on Development[1], Operations[2] or both[3]:"
 read role;
 
 if [ -z "${role}" ] || [ $role = "1"  ]; then
-  sh -c "$(curl -fsSL https://gist.githubusercontent.com/mauricios/5f7bc2bc8d50ad85ab00c3fdfdef1d0c/raw/Install-Development-macOS.sh)";
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/Aplyca/macOS-environment/master/development.sh)";
 elif [ -z "${role}" ] || [ $role = "2"  ]; then
-  sh -c "$(curl -fsSL https://gist.githubusercontent.com/mauricios/5f7bc2bc8d50ad85ab00c3fdfdef1d0c/raw/Install-Operations-macOS.sh)";
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/Aplyca/macOS-environment/master/operations.sh)";
 elif [ -z "${role}" ] || [ $role = "3"  ]; then
-  sh -c "$(curl -fsSL https://gist.githubusercontent.com/mauricios/5f7bc2bc8d50ad85ab00c3fdfdef1d0c/raw/Install-Development-macOS.sh)";
-  sh -c "$(curl -fsSL https://gist.githubusercontent.com/mauricios/5f7bc2bc8d50ad85ab00c3fdfdef1d0c/raw/Install-Operations-macOS.sh)";
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/Aplyca/macOS-environment/master/development.sh)";
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/Aplyca/macOS-environment/master/operations.sh)";
 fi
 
 # Configure Git
-sh -c "$(curl -fsSL https://gist.githubusercontent.com/mauricios/5f7bc2bc8d50ad85ab00c3fdfdef1d0c/raw/configure_git_ssh_key.sh)" &&
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/Aplyca/macOS-environment/master/configure_git.sh)" &&
 
 # install Oh my Zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" &&
