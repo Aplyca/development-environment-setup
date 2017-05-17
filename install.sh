@@ -37,6 +37,9 @@ elif [ -z "${role}" ] || [ $role = "3"  ]; then
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/Aplyca/macOS-environment/master/operations.sh)";
 fi
 
+# Cleaning up disk space
+brew cleanup;
+
 # Configure Git
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/Aplyca/macOS-environment/master/configure_git.sh)" &&
 
