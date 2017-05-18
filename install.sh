@@ -25,7 +25,7 @@ vagrant plugin install vagrant-hostmanager &&
 # Upgrade pip
 sudo -H pip install -U pip;
 
-echo "Are you going to work on Development[1], Operations[2] or both[3]:"
+echo "Are you going to work on Development[1], Operations[2] or both[3]?"
 read role;
 
 if [ -z "${role}" ] || [ $role = "1"  ]; then
