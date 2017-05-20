@@ -8,7 +8,7 @@
 
 * Verify the content of the script:
 
-  `curl -fsSL https://git.io/macOS-environment)`
+  `curl -fsSL https://git.io/macOS-environment`
 
 * Then execute the script:
 
