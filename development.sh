@@ -18,3 +18,6 @@ apm install linter-scss-lint php-cs-fixer php-twig linter-ui-default pigments fo
 
 # Install NodeJs packages
 npm install -g gulp-cli;
+
+# Adding Development environment
+vagrant box update --box Aplyca/LAMP;
