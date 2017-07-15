@@ -20,4 +20,5 @@ apm install linter-scss-lint php-cs-fixer php-twig linter-ui-default pigments fo
 npm install -g gulp-cli;
 
 # Adding Development environment
+vagrant box add Aplyca/LAMP || true;
 vagrant box update --box Aplyca/LAMP;
