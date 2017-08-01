@@ -14,7 +14,7 @@ brew upgrade &&
 gem install scss_lint &&
 
 # Install Atom packages
-apm install linter-scss-lint php-cs-fixer php-twig linter-ui-default pigments fonts svg-preview language-ezlegacy &&
+apm install fonts emmet linter-scss-lint php-cs-fixer php-twig linter-ui-default pigments fonts svg-preview language-ezlegacy stylus &&
 
 # Install NodeJs packages
 npm install -g gulp-cli;

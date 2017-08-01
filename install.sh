@@ -10,17 +10,23 @@ fi
 
 # Isntall CLI packages
 brew update;
-brew install bash python3 zsh zsh-completions git ruby node yarn coffeescript vim tig wget lynx httpie ansible;
+brew install bash python3 zsh zsh-completions antigen git ruby node vim tig wget lynx httpie ansible;
 brew upgrade;
 
 # Install GUI packages
-brew cask install iterm2 virtualbox vagrant google-chrome atom;
+brew cask install hyper iterm2 virtualbox vagrant google-chrome atom;
 
 # Install Atom packages
-apm install file-icons atom-beautify linter language-apache atom-jinja2 markdown-preview-plus linter-ui-default fonts;
+apm install file-icons atom-beautify linter language-apache atom-jinja2 markdown-preview-plus linter-ui-default language-nginx;
 
 # Install Vagrant plugins
 vagrant plugin install vagrant-hostmanager;
+
+# Install Hyper package manager
+npm install -g hpm-cli
+
+# Install Hyper packages
+hpm i hyper-one-light hypercwd hyperlinks hyperterm-tabs
 
 # Upgrade pip
 sudo -H pip install -U pip;
@@ -49,6 +55,11 @@ fi
 
 # install Oh my Zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)";
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting;
+
+# Enalble Zsh plugins
+# plugins=(git vagrant httpie web-search docker zsh-syntax-highlighting)
+
 
 # Enable Zsh shell
 chsh -s $(which zsh);
