@@ -7,7 +7,7 @@ brew tap homebrew/php &&
 
 # Isntall CLI packages
 brew update &&
-brew install php71 php71-intl php-cs-fixer robo composer behat codeception phpspec bower --without-apache &&
+brew upgrade php71 php71-intl php-cs-fixer robo composer behat codeception phpspec bower --without-apache &&
 brew upgrade &&
 
 # Install ruby packages

@@ -10,7 +10,7 @@ fi
 
 # Isntall CLI packages
 brew update;
-brew install bash python3 zsh zsh-completions antigen git ruby node vim tig wget lynx httpie ansible;
+brew upgrade bash python3 zsh zsh-completions antigen git ruby node vim tig wget lynx httpie ansible;
 brew upgrade;
 
 # Install GUI packages
