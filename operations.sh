@@ -6,4 +6,4 @@ echo "Setting up your Operations environment...";
 brew install terraform awscli xz &&
 
 # Install Atom packages
-apm install language-terraform autocomplete-ansible ansible-vault language-varnish;
+apm install language-apache atom-jinja2 language-terraform autocomplete-ansible ansible-vault language-varnish language-nginx;

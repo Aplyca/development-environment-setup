@@ -17,7 +17,7 @@ brew upgrade;
 brew cask install hyper iterm2 virtualbox vagrant google-chrome atom;
 
 # Install Atom packages
-apm install file-icons atom-beautify linter language-apache atom-jinja2 markdown-preview-plus linter-ui-default language-nginx;
+apm install file-icons atom-beautify docblockr highlight-selected linter markdown-preview-plus linter-ui-default;
 
 # Install Vagrant plugins
 vagrant plugin install vagrant-hostmanager;
