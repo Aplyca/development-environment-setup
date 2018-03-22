@@ -9,45 +9,23 @@ else
 fi
 
 # Isntall CLI packages
-brew update;
-brew upgrade bash python3 zsh zsh-completions antigen git ruby node vim tig wget lynx httpie ansible;
-brew upgrade;
+brew install bash make zsh zsh-completions antigen git vim tig wget lynx httpie xz;
 
 # Install GUI packages
-brew cask install hyper iterm2 virtualbox vagrant google-chrome atom;
+brew cask install hyper google-chrome atom;
 
 # Install Atom packages
-apm install file-icons atom-beautify docblockr highlight-selected linter markdown-preview-plus linter-ui-default;
-
-# Install Vagrant plugins
-vagrant plugin install vagrant-hostmanager;
-
-# Install Hyper package manager
-npm install -g hpm-cli
+apm install file-icons atom-beautify docblockr highlight-selected linter markdown-preview-plus linter-ui-default language-apache atom-jinja2 language-terraform autocomplete-ansible ansible-vault language-varnish language-nginx fonts emmet linter-scss-lint php-cs-fixer php-twig linter-ui-default pigments fonts svg-preview language-ezlegacy stylus;
 
 # Install Hyper packages
-hpm i hyper-one-light hypercwd hyperlinks hyperterm-tabs
-
-# Upgrade pip
-sudo -H pip install -U pip;
-
-echo "Are you going to work on Development[1], Operations[2] or both[3]?"
-read role;
-
-if [ -z "${role}" ] || [ $role = "1"  ]; then
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/Aplyca/macOS-environment/master/development.sh)";
-elif [ -z "${role}" ] || [ $role = "2"  ]; then
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/Aplyca/macOS-environment/master/operations.sh)";
-elif [ -z "${role}" ] || [ $role = "3"  ]; then
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/Aplyca/macOS-environment/master/development.sh)";
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/Aplyca/macOS-environment/master/operations.sh)";
-fi
+# PLugin manager for Hyper deprecated
+#hpm i hyper-one-dark hypercwd hyperlinks hyperterm-tabs
 
 # Cleaning up disk space
 brew cleanup;
 
 # Configure Git
-echo "Do you want to conigure Git[y/n]"
+echo "Do you want to configure Git[y/n]"
 read git;
 if [ -z "${git}" ] || [ $git = "y"  ]; then
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/Aplyca/macOS-environment/master/configure_git.sh)";
@@ -57,9 +35,11 @@ fi
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)";
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting;
 
-# Enalble Zsh plugins
+# Enable Zsh plugins
 # plugins=(git vagrant httpie web-search docker zsh-syntax-highlighting)
-
 
 # Enable Zsh shell
 chsh -s $(which zsh);
+
+#Create your projects folder
+mkdir -p ~/projects;

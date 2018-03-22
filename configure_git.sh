@@ -17,10 +17,10 @@ else
 fi
 
 if [ -z "${host}" ] || [ -z "${key}" ]; then
-  echo "SSH key not setted";
+  echo "SSH key not set";
 else
   ssh-keygen -t rsa -b 4096 -C "$email" -f ~/.ssh/$key -N '';
   printf "\nHost $host\n    HostName $host\n    User git\n    IdentityFile ~/.ssh/$key\n    StrictHostKeyChecking no\n" >> ~/.ssh/config;
   pbcopy < ~/.ssh/$key.pub;
-  echo "You public key (~/.ssh/$key.pub) was copied to your clipboard";
+  echo "Your public key (~/.ssh/$key.pub) was copied to your clipboard";
 fi
