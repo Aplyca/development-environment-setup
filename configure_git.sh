@@ -19,7 +19,7 @@ fi
 if [ -z "${host}" ] || [ -z "${key}" ]; then
   echo "SSH key not set";
 else
-  ssh-keygen -t rsa -b 4096 -C "$email" -f ~/.ssh/$key -N '';
+  ssh-keygen -t rsa -b 4096 -C "$email" -f ~/.ssh/$key -N "" -P "";
   printf "\nHost $host\n    HostName $host\n    User git\n    IdentityFile ~/.ssh/$key\n    StrictHostKeyChecking no\n" >> ~/.ssh/config;
   pbcopy < ~/.ssh/$key.pub;
   echo "Your public key (~/.ssh/$key.pub) was copied to your clipboard";

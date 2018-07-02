@@ -9,17 +9,20 @@ else
 fi
 
 # Isntall CLI packages
-brew install bash make zsh zsh-completions antigen git vim tig wget lynx httpie xz;
+brew install bash make zsh zsh-completions antigen git vim tig wget lynx httpie xz node;
 
 # Install GUI packages
-brew cask install hyper google-chrome atom;
+brew cask install hyper google-chrome atom docker;
 
 # Install Atom packages
-apm install file-icons atom-beautify docblockr highlight-selected linter markdown-preview-plus linter-ui-default language-apache atom-jinja2 language-terraform autocomplete-ansible ansible-vault language-varnish language-nginx fonts emmet linter-scss-lint php-cs-fixer php-twig linter-ui-default pigments fonts svg-preview language-ezlegacy stylus;
+apm install atom-jinja2 file-icons language-apache linter pigments Stylus autocomplete-ansible fonts language-ezlegacy linter-scss-lint platformio-ide-terminal ansible-vault busy-signal highlight-selected language-nginx linter-ui-default svg-preview atom-beautify docblockr ide-php language-terraform php-cs-fixer teletype atom-ide-ui emmet intentions language-varnish php-twig zentabs
 
 # Install Hyper packages
-# PLugin manager for Hyper deprecated
-#hpm i hyper-one-dark hypercwd hyperlinks hyperterm-tabs
+hyper i hyper-one-dark hypercwd hyperlinks hyper-tabs-enhanced hyper-autohide-tabs hyper-pane
+
+# Install npm packages
+npm i -g commitizen cz-conventional-changelog
+echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
 
 # Cleaning up disk space
 brew cleanup;
