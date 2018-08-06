@@ -9,10 +9,10 @@ else
 fi
 
 # Isntall CLI packages
-brew install bash make zsh zsh-completions antigen git vim tig wget lynx httpie xz node;
+brew install bash make zsh zsh-completions antigen git neovim tig wget lynx httpie xz node tmate;
 
 # Install GUI packages
-brew cask install hyper google-chrome atom docker;
+brew cask install hyper google-chrome visual-studio-code atom docker;
 
 # Install Atom packages
 apm install atom-jinja2 file-icons language-apache linter pigments Stylus autocomplete-ansible fonts language-ezlegacy linter-scss-lint platformio-ide-terminal ansible-vault busy-signal highlight-selected language-nginx linter-ui-default svg-preview atom-beautify docblockr ide-php language-terraform php-cs-fixer teletype atom-ide-ui emmet intentions language-varnish php-twig zentabs
