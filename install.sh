@@ -9,20 +9,16 @@ else
 fi
 
 # Isntall CLI packages
-brew install bash make zsh zsh-completions antigen git neovim tig wget lynx httpie xz node tmate;
+brew install bash make zsh zsh-completions antigen git neovim tig wget lynx httpie xz tmate;
 
 # Install GUI packages
-brew cask install hyper google-chrome visual-studio-code atom docker;
+brew cask install hyper google-chrome visual-studio-code docker;
 
-# Install Atom packages
-apm install atom-jinja2 file-icons language-apache linter pigments Stylus autocomplete-ansible fonts language-ezlegacy linter-scss-lint platformio-ide-terminal ansible-vault busy-signal highlight-selected language-nginx linter-ui-default svg-preview atom-beautify docblockr ide-php language-terraform php-cs-fixer teletype atom-ide-ui emmet intentions language-varnish php-twig zentabs
+# Install VSCode packages
+code --install-extension bungcip.better-toml --install-extension cssho.vscode-svgviewer --install-extension dawhite.mustache --install-extension dbaeumer.vscode-eslint --install-extension eamodio.gitlens --install-extension esbenp.prettier-vscode --install-extension felixfbecker.php-intellisense --install-extension HookyQR.beautify --install-extension imperez.smarty --install-extension junstyle.php-cs-fixer --install-extension KnisterPeter.vscode-commitizen --install-extension mikestead.dotenv --install-extension PeterJausovec.vscode-docker --install-extension shanoor.vscode-nginx --install-extension stevejpurves.cucumber --install-extension sysoev.language-stylus --install-extension whatwedo.twig --install-extension wholroyd.jinja --install-extension yzhang.markdown-all-in-one
 
 # Install Hyper packages
 hyper i hyper-one-dark hypercwd hyperlinks hyper-tabs-enhanced hyper-autohide-tabs hyper-pane
-
-# Install npm packages
-npm i -g commitizen cz-conventional-changelog
-echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
 
 # Cleaning up disk space
 brew cleanup;
@@ -39,7 +35,7 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting;
 
 # Enable Zsh plugins
-# plugins=(git vagrant httpie web-search docker zsh-syntax-highlighting)
+# plugins=(git httpie web-search docker zsh-syntax-highlighting)
 
 # Enable Zsh shell
 chsh -s $(which zsh);
