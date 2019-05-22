@@ -2,10 +2,8 @@
 # Install Ubuntu software
 
 # Isntall CLI packages
-apt install bash make zsh zsh-completions antigen git neovim tig wget lynx httpie xz tmate curl;
-
-# Install GUI packages
-apt install install google-chrome visual-studio-code;
+sudo apt-get update;
+sudo apt-get install bash make zsh git neovim tig wget lynx httpie tmate curl;
 
 # Configure Git
 echo "Do you want to configure Git[y/n]"
