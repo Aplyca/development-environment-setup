@@ -3,7 +3,7 @@
 
 # Isntall CLI packages
 sudo apt-get update;
-sudo apt-get install bash make zsh git neovim tig wget lynx httpie tmate curl;
+sudo apt-get install bash make zsh git neovim tig wget lynx httpie tmate curl xclip -y;
 
 # Configure Git
 echo "Do you want to configure Git[y/n]"
