@@ -1,23 +1,25 @@
-# macOS Environment
+# macOS/Ubuntu Environment
 
 ## Requirements
-* macOs Sierra
+* macOS Sierra or Ubuntu
 * Sudo access to your machine
 
 ## How to install
 
 * Verify the content of the script:
 
-  `curl -fsSL https://git.io/macOS-environment`
+  `curl -fsSL https://raw.githubusercontent.com/Aplyca/development-environment-setup/master/<macos|>.sh`
 
 * Then execute the script:
 
-  `sh -c "$(curl -fsSL https://git.io/macOS-environment)"`
+  `sh -c "$(curl -fsSL https://raw.githubusercontent.com/Aplyca/development-environment-setup/master/macos.sh)"`
 
 ## What will be installed?
 
-* Vagrant
-* VirtualBox
-* Ansible
-* Iterm2
-* Many more useful packages
+* Homebrew (macOS)
+* Git and other basic tools
+* Google Chrome
+* Visual Studio Code
+* Hyper terminal and Hyper extensions
+* Zsh and Oh my Zsh
+* Configure git
