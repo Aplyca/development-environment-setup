@@ -1,22 +1,18 @@
-# macOS/Ubuntu Environment
+# macOS/Ubuntu Environment setup
 
 ## Requirements
-* macOS Sierra or Ubuntu
+* macOS or Ubuntu
 * Sudo access to your machine
 
 ## How to install
 
-* Verify the content of the script:
+* Execute the script depending of your OS
 
-  `curl -fsSL https://raw.githubusercontent.com/Aplyca/development-environment-setup/master/<macos|>.sh`
-
-* Then execute the script:
-
-  `sh -c "$(curl -fsSL https://raw.githubusercontent.com/Aplyca/development-environment-setup/master/macos.sh)"`
+`wget -O - https://raw.githubusercontent.com/Aplyca/development-environment-setup/master/<macos|ubuntu>.sh | bash`
 
 ## What will be installed?
 
-* Homebrew (macOS)
+* Homebrew (for macOS only)
 * Git and other basic tools
 * Google Chrome
 * Visual Studio Code

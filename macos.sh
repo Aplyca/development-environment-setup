@@ -9,7 +9,7 @@ else
 fi
 
 # Isntall CLI packages
-brew install bash make zsh zsh-completions antigen git neovim tig wget lynx httpie xz tmate;
+brew install bash make zsh zsh-completions antigen git neovim tig wget lynx httpie xz tmate curl;
 
 # Install GUI packages
 brew cask install hyper google-chrome visual-studio-code;
