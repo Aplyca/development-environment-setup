@@ -7,8 +7,8 @@
 ## How to install
 
 * Execute the script depending of your OS
-
-`wget -O - https://raw.githubusercontent.com/Aplyca/development-environment-setup/master/<macos|ubuntu>.sh | bash`
+  
+`bash <(wget -qO- https://raw.githubusercontent.com/Aplyca/development-environment-setup/master/<macos|ubuntu>.sh)`
 
 ## What will be installed?
 
